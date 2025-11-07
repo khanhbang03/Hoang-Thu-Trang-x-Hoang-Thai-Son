@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoàng Thu Trang ❤️ Hoàng Thái Sơn</title>
+  <style>
+    /* ===== Base ===== */
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+    body {
+      background: linear-gradient(-45deg, #6a11cb, #2575fc, #ff758c, #ff7eb3);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      color: white;
+      overflow-x: hidden;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    /* ===== Hero Section ===== */
+    header {
+      min-height: 100vh;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-shadow: 0 0 20px rgba(255,255,255,0.8);
+      animation: glow 2s infinite alternate;
+    }
+    header h2 {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff, 0 0 20px #ff7eb3; }
+      to { text-shadow: 0 0 25px #fff, 0 0 40px #6a11cb; }
+    }
+    .scroll-down {
+      margin-top: 40px;
+      font-size: 14px;
+      animation: bounce 1.8s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% {transform: translateY(0);}
+      50% {transform: translateY(-10px);}
+    }
+
+    /* ===== Story Section ===== */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .story {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 20px;
+      transition: transform 0.4s ease;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+    }
+    .card img {
+      width: 100%; border-radius: 15px; margin-bottom: 15px;
+    }
+    .card p {
+      font-size: 14px; line-height: 1.5;
+    }
+
+    /* ===== Timeline ===== */
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%; transform: translateX(-50%);
+      width: 4px; height: 100%;
+      background: rgba(255,255,255,0.5);
+    }
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 20px;
+    }
+    .timeline-item.left { left: 0; text-align: right; }
+    .timeline-item.right { left: 50%; }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      width: 20px; height: 20px;
+      border-radius: 50%;
+      background: #fff;
+      border: 4px solid #ff7eb3;
+      z-index: 1;
+    }
+    .timeline-item.left::before { right: -12px; }
+    .timeline-item.right::before { left: -12px; }
+    .timeline-box {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(15px);
+      padding: 15px;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header>
+    <h1>💖 Hoàng Thu Trang x Hoàng Thái Sơn 💖</h1>
+    <h2>Two souls, one love story</h2>
+    <div class="scroll-down">⬇ Scroll to explore their journey ⬇</div>
+  </header>
+
+  <!-- Story Section -->
+  <section>
+    <h3>✨ Our Story</h3>
+    <div class="story">
+      <div class="card">
+        <img src="https://picsum.photos/400/250?random=1" alt="Trang">
+        <h4>Hoàng Thu Trang</h4>
+        <p>A kind heart, a bright smile, and endless love. Trang brings warmth and beauty to this journey.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/400/250?random=2" alt="Son">
+        <h4>Hoàng Thái Sơn</h4>
+        <p>A strong soul, a caring partner, and a dreamer. Sơn walks hand in hand with Trang through every moment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section>
+    <h3>📅 Our Journey</h3>
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="timeline-box">💌 First meeting – A magical day when everything started.</div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-box">🎉 First adventure – Exploring the world together, one step at a time.</div>
+      </div>
+      <div class="timeline-item left">
+        <div class="timeline-box">💍 A promise – A bond of love, trust, and forever dreams.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Made with ❤️ for <b>Hoàng Thu Trang</b> & <b>Hoàng Thái Sơn</b> · Forever & Always 🌙
+  </footer>
+
+  <script>
+    // Animate timeline items on scroll
+    const items = document.querySelectorAll(".timeline-item");
+    const revealOnScroll = () => {
+      const trigger = window.innerHeight * 0.85;
+      items.forEach(item => {
+        const rect = item.getBoundingClientRect();
+        if(rect.top < trigger) {
+          item.style.opacity = 1;
+          item.style.transform = "translateY(0)";
+        } else {
+          item.style.opacity = 0;
+          item.style.transform = "translateY(40px)";
+        }
+        item.style.transition = "all 0.8s ease";
+      });
+    };
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+  </script>
+</body>
+</html>
